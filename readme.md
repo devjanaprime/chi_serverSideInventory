@@ -42,14 +42,14 @@ Steps:
 
 [ ] display inventory on DOM
 
-[ ] POST AJAX call to check if any objects' names contain the given search string * return appropriate array
+[ ] POST AJAX call to check if any objects' names contain the given search string & return appropriate array
 
 Stretch Goals:
 ==============
 
-[ ] clear add input(s) on successful add
+[ ] clear appropriate input(s) on successful add
 
-[ ] clear name search input on search completion
+[ ] clear appropriate search input(s) on search completion
 
 [ ] add search functionality for description
 
@@ -59,4 +59,4 @@ Stretch Goals:
 
 [ ] "remove" route for inventory controller
 
-[ ] add 'imageUrl' option to objects
+[ ] search functionality for both name and description
