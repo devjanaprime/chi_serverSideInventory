@@ -22,7 +22,7 @@ Tech:
 - AJAX
 
 Steps:
-------
+======
 
 [ ] spin up Node/Express server
 
@@ -45,7 +45,7 @@ Steps:
 [ ] POST AJAX call to check if any objects' names contain the given search string * return appropriate array
 
 Stretch Goals:
---------------
+==============
 
 [ ] clear add input(s) on successful add
 
