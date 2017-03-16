@@ -5,7 +5,8 @@ $( document ).ready( function(){
     // get user input
     // assemble into object to send
     var objectToSend = {
-      name: $( '#nameInAdd' ).val()
+      name: $( '#nameInAdd' ).val(),
+      description: $( '#descriptionInAdd' ).val()
     }; // end objectToSend
     console.log( 'sending:', objectToSend );
     // send to server
@@ -21,6 +22,7 @@ $( document ).ready( function(){
           getInventory();
           // clear input
           $( '#nameInAdd' ).val('');
+          $( '#descriptionInAdd' ).val('');
         } // end success
         else{
           alert( 'error adding item')
@@ -37,12 +39,12 @@ $( document ).ready( function(){
     $( '#nameInSearch' ).val( '' );
   });
 
-  $( '#searchButton' ).on( 'click', function(){
+  $( '#searchNameButton' ).on( 'click', function(){
     var searchText = $( '#nameInSearch' ).val();
     console.log( 'in end searchButton on click:', searchText );
     $.ajax({
       type: 'POST',
-      url: '/inventory/search',
+      url: '/inventory/searchName',
       data: { name: searchText },
       success: function( response ){
         showInventory( response );
@@ -53,7 +55,7 @@ $( document ).ready( function(){
   var showInventory = function( inventoryToShow ){
     $( '#listDiv' ).empty();
     for (var i = 0; i < inventoryToShow.length; i++) {
-      $( '#listDiv' ).append( '<p>' + inventoryToShow[i].name + '</p>' );
+      $( '#listDiv' ).append( '<p><b>' + inventoryToShow[i].name + '</b>: ' + inventoryToShow[i].description + '</p>' );
     } // end for
   };
 

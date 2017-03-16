@@ -17,8 +17,8 @@ router.post( '/add', function( req, res ){
 }); //end add
 
 // add to invenvtory
-router.post( '/search', function( req, res ){
-    console.log( 'searching inventory: for', req.body );
+router.post( '/searchName', function( req, res ){
+    console.log( 'searching inventory for name:', req.body );
     var searchResults = [];
     for (var i = 0; i < theInventory.length; i++) {
       if( theInventory[i].name.includes( req.body.name ) ){
