@@ -23,23 +23,40 @@ Tech:
 
 Steps:
 ------
+
 [ ] spin up Node/Express server
+
 [ ] send back index.html via app.js with sourced js files
+
 [ ] refactor app.js to use an 'index.js' Express router module for index.html
+
 [ ] setup basic interface
+
 [ ] test JQ interactive elements
+
 [ ] setup 'inventory.js' with temp inventory array and GET route to return said array
+
 [ ] GET AJAX call to inventory returns array
+
 [ ] POST AJAX call to inventory adds new item to array on the server
+
 [ ] display inventory on DOM
+
 [ ] POST AJAX call to check if any objects' names contain the given search string * return appropriate array
 
 Stretch Goals:
 --------------
+
 [ ] clear add input(s) on successful add
+
 [ ] clear name search input on search completion
+
 [ ] add search functionality for description
+
 [ ] display "no matches" if empty array is returned for a search
+
 [ ] "remove" button for each item
+
 [ ] "remove" route for inventory controller
+
 [ ] add 'imageUrl' option to objects
